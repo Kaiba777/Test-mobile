@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/pages/home/home.dart';
+import 'package:mon_test/pages/proverbes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: MyHomePage(),
+      routes: {
+        '/proverbes': (BuildContext context) => ProverbesPage()
+      },
     );
   }
 }
