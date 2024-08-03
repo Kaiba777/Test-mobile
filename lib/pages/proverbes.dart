@@ -33,7 +33,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-proverbes1');
+                      },
                       child: Text(
                         'Proverbes Africains #1',
                         style: TextStyle(
@@ -54,7 +56,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-proverbes2');
+                      },
                       child: Text(
                         'Proverbes Africains #2',
                         style: TextStyle(
@@ -75,7 +79,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-proverbes3');
+                      },
                       child: Text(
                         'Proverbes Africains #3',
                         style: TextStyle(
@@ -96,7 +102,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-proverbes4');
+                      },
                       child: Text(
                         'Proverbes Africains #4',
                         style: TextStyle(
@@ -117,7 +125,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-vie');
+                      },
                       child: Text(
                         'La Vie',
                         style: TextStyle(
@@ -138,7 +148,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-temps');
+                      },
                       child: Text(
                         'Le Temps',
                         style: TextStyle(
@@ -159,7 +171,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-parole');
+                      },
                       child: Text(
                         'La Parole',
                         style: TextStyle(
@@ -180,7 +194,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-amour');
+                      },
                       child: Text(
                         'L\'Amour',
                         style: TextStyle(
@@ -201,7 +217,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-vieillisse');
+                      },
                       child: Text(
                         'La Vieillisse',
                         style: TextStyle(
@@ -222,7 +240,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-soleil');
+                      },
                       child: Text(
                         'Le Soleil',
                         style: TextStyle(
@@ -243,7 +263,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-patience');
+                      },
                       child: Text(
                         'La Patience',
                         style: TextStyle(
@@ -264,7 +286,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-mensonge');
+                      },
                       child: Text(
                         'Le Mensonge',
                         style: TextStyle(
@@ -285,7 +309,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-coeur');
+                      },
                       child: Text(
                         'Le Coeur',
                         style: TextStyle(
@@ -306,7 +332,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-amitie');
+                      },
                       child: Text(
                         'L\'Amitié',
                         style: TextStyle(
@@ -327,7 +355,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-erreur');
+                      },
                       child: Text(
                         'Les Erreurs',
                         style: TextStyle(
@@ -348,7 +378,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-famille');
+                      },
                       child: Text(
                         'La Famille',
                         style: TextStyle(
@@ -369,7 +401,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-pauvrete');
+                      },
                       child: Text(
                         'La Pauvreté',
                         style: TextStyle(
@@ -390,7 +424,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-verite');
+                      },
                       child: Text(
                         'La Vérité',
                         style: TextStyle(
@@ -411,7 +447,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-sourire');
+                      },
                       child: Text(
                         'Le Sourire',
                         style: TextStyle(
@@ -432,7 +470,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-relation-humaine');
+                      },
                       child: Text(
                         'Les Relations Humaines',
                         style: TextStyle(
@@ -453,7 +493,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-sagesse');
+                      },
                       child: Text(
                         'La Sagesse',
                         style: TextStyle(
@@ -474,7 +516,9 @@ class _ProverbesPageState extends State<ProverbesPage> {
                   width: 300,
                   color: Colors.white30,
                   child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/liste-richesse');
+                      },
                       child: Text(
                         'La Richesse',
                         style: TextStyle(

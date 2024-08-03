@@ -24,7 +24,7 @@ class Proverbes3 {
       Proverbes3("«La figue ne tombe jamais en plein dans la bouche.»"),
       Proverbes3("«Vouloir arriver, c’est avoir fait la moitié du chemin.»"),
       Proverbes3("«Tu peux te faire effrayer dans la rivière par un crocodile, mais ne laisse pas les poissons se moquer de toi.»"),
-      Proverbes3("1.	«Celui qui a vécu sans qu’on s’en aperçoive, s’il meurt, on ne s’en apercevra pas.»"),
+      Proverbes3("«Celui qui a vécu sans qu’on s’en aperçoive, s’il meurt, on ne s’en apercevra pas.»"),
     ];
   }
 }
