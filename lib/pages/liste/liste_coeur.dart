@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/coeur.dart';
+import 'package:mon_test/pages/detail/detail_coeur.dart';
 
 class ListeCoeur extends StatefulWidget {
   const ListeCoeur({super.key});
@@ -30,7 +31,10 @@ class _ListeCoeurState extends State<ListeCoeur> {
               child: ListTile(
                 title: Text('${coeur.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailCoeur(coeur))
+                  );
                 },
               ),
             ),

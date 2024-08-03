@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/erreurs.dart';
+import 'package:mon_test/pages/detail/detail_erreur.dart';
 
 class ListeErreur extends StatefulWidget {
   const ListeErreur({super.key});
@@ -30,7 +31,10 @@ class _ListeErreurState extends State<ListeErreur> {
               child: ListTile(
                 title: Text('${erreur.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailErreur(erreur))
+                  );
                 },
               ),
             ),

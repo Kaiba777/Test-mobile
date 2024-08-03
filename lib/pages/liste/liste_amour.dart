@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/amour.dart';
+import 'package:mon_test/pages/detail/detail_amour.dart';
 
 class ListeAmour extends StatefulWidget {
   const ListeAmour({super.key});
@@ -30,7 +31,10 @@ class _ListeAmourState extends State<ListeAmour> {
               child: ListTile(
                 title: Text('${amour.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailAmour(amour))
+                  );
                 },
               ),
             ),

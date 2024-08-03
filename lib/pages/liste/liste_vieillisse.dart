@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/vieillisse.dart';
+import 'package:mon_test/pages/detail/detail_vieillisse.dart';
 
 class ListeVieillisse extends StatefulWidget {
   const ListeVieillisse({super.key});
@@ -30,7 +31,10 @@ class _ListeVieillisseState extends State<ListeVieillisse> {
               child: ListTile(
                 title: Text('${vieillisse.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailVieillisse(vieillisse))
+                  );
                 },
               ),
             ),

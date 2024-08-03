@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/vie.dart';
+import 'package:mon_test/pages/detail/detail_vie.dart';
 
 class ListeVie extends StatefulWidget {
   const ListeVie({super.key});
@@ -30,7 +31,10 @@ class _ListeVieState extends State<ListeVie> {
             child: ListTile(
               title: Text('${vie.contenu}'),
               onTap: () {
-
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (BuildContext context) => DetailVie(vie))
+                );
               },
             )
           ),

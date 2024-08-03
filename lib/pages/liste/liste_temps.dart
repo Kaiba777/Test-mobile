@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/temps.dart';
+import 'package:mon_test/pages/detail/detail_temps.dart';
 
 class ListeTemps extends StatefulWidget {
   const ListeTemps({super.key});
@@ -30,7 +31,10 @@ class _ListeTempsState extends State<ListeTemps> {
               child: ListTile(
                 title: Text('${temps.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailTemps(temps))
+                  );
                 },
               ),
             ),

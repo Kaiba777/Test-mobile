@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/relations_humaines.dart';
+import 'package:mon_test/pages/detail/detail_relation_humaine.dart';
 
 class ListeRelationHumaine extends StatefulWidget {
   const ListeRelationHumaine({super.key});
@@ -30,7 +31,10 @@ class _ListeRelationHumaineState extends State<ListeRelationHumaine> {
               child: ListTile(
                 title: Text('${relationHumaine.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailRelationHumaine(relationHumaine))
+                  );
                 },
               ),
             ),

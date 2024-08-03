@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/amitie.dart';
+import 'package:mon_test/pages/detail/detail_amitie.dart';
 
 class ListeAmitie extends StatefulWidget {
   const ListeAmitie({super.key});
@@ -30,7 +31,10 @@ class _ListeAmitieState extends State<ListeAmitie> {
               child: ListTile(
                 title: Text('${amitie.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailAmitie(amitie))
+                  );
                 },
               ),
             ),

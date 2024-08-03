@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/proverbes3.dart';
+import 'package:mon_test/pages/detail/detail_proverbe3.dart';
 
 class ListeProverbe3 extends StatefulWidget {
   const ListeProverbe3({super.key});
@@ -30,7 +31,10 @@ class _ListeProverbe3State extends State<ListeProverbe3> {
               child: ListTile(
                 title: Text('${proverbe.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailProverbe3(proverbe))
+                  );
                 },
               ),
             ),

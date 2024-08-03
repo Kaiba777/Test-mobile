@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/richesse.dart';
+import 'package:mon_test/pages/detail/detail_richesse.dart';
 
 class ListeRichesse extends StatefulWidget {
   const ListeRichesse({super.key});
@@ -30,7 +31,10 @@ class _ListeRichesseState extends State<ListeRichesse> {
               child: ListTile(
                 title: Text('${richesse.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailRichesse(richesse))
+                  );
                 },
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/pauvrete.dart';
+import 'package:mon_test/pages/detail/detail_pauvrete.dart';
 
 class ListePauvrete extends StatefulWidget {
   const ListePauvrete({super.key});
@@ -30,7 +31,10 @@ class _ListePauvreteState extends State<ListePauvrete> {
               child: ListTile(
                 title: Text('${pauvrete.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailPauvrete(pauvrete))
+                  );
                 },
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/sagesse.dart';
+import 'package:mon_test/pages/detail/detail_sagesse.dart';
 
 class ListeSagesse extends StatefulWidget {
   const ListeSagesse({super.key});
@@ -30,7 +31,10 @@ class _ListeSagesseState extends State<ListeSagesse> {
               child: ListTile(
                 title: Text('${sagesse.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailSagesse(sagesse))
+                  );
                 },
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/patience.dart';
+import 'package:mon_test/pages/detail/detail_patience.dart';
 
 class ListePatience extends StatefulWidget {
   const ListePatience({super.key});
@@ -30,7 +31,10 @@ class _ListePatienceState extends State<ListePatience> {
               child: ListTile(
                 title: Text('${patience.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailPatience(patience))
+                  );
                 },
               ),
             ),

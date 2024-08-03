@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/sourire.dart';
+import 'package:mon_test/pages/detail/detail_sourire.dart';
 
 class ListeSourire extends StatefulWidget {
   const ListeSourire({super.key});
@@ -30,7 +31,10 @@ class _ListeSourireState extends State<ListeSourire> {
               child: ListTile(
                 title: Text('${sourire.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailSourire(sourire))
+                  );
                 },
               ),
             ),

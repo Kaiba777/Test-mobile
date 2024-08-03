@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mon_test/pages/detail/detail_proverbe1.dart';
 import 'package:mon_test/pages/liste/liste_amitie.dart';
 import 'package:mon_test/pages/liste/liste_amour.dart';
 import 'package:mon_test/pages/liste/liste_coeur.dart';

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/soleil.dart';
+import 'package:mon_test/pages/detail/detail_soleil.dart';
 
 class ListeSoleil extends StatefulWidget {
   const ListeSoleil({super.key});
@@ -30,7 +31,10 @@ class _ListeSoleilState extends State<ListeSoleil> {
               child: ListTile(
                 title: Text('${soleil.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailSoleil(soleil))
+                  );
                 },
               ),
             ),

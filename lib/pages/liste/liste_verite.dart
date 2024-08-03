@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mon_test/models/verite.dart';
+import 'package:mon_test/pages/detail/detail_verite.dart';
 
 class ListeVerite extends StatefulWidget {
   const ListeVerite({super.key});
@@ -30,7 +31,10 @@ class _ListeVeriteState extends State<ListeVerite> {
               child: ListTile(
                 title: Text('${verite.contenu}'),
                 onTap: () {
-
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (BuildContext context) => DetailVerite(verite))
+                  );
                 },
               ),
             ),
